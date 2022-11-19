@@ -27,6 +27,9 @@
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path d="M24 10.363h-5.904v-3.323c0-1.248 0.963-1.539 1.643-1.539h4.165v-5.483l-5.736-0.019c-6.371 0-7.821 4.091-7.821 6.707v3.653h-3.68v5.653h3.68v15.987h7.749v-15.989h5.227l0.677-5.648z"></path>
 </symbol>
+<symbol id="icon-modal-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#86e543" style="stroke: var(--color1, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.1429" d="M21.486 10.514l-10.971 10.971M10.514 10.514l10.971 10.971M16 31.238c8.416 0 15.238-6.822 15.238-15.238s-6.822-15.238-15.238-15.238-15.238 6.822-15.238 15.238 6.822 15.238 15.238 15.238z"></path>
+</symbol>
 <symbol id="icon-close-green" viewBox="0 0 32 32">
 <path fill="none" stroke="#86e543" style="stroke: var(--color3, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4118" d="M21.294 10.706l-10.588 10.588M10.706 10.706l10.588 10.588M16 30.706c8.122 0 14.706-6.584 14.706-14.706s-6.584-14.706-14.706-14.706c-8.122 0-14.706 6.584-14.706 14.706s6.584 14.706 14.706 14.706z"></path>
 </symbol>
