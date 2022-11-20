@@ -1,0 +1,62 @@
+.backdrop-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 24px;
+  background: rgba(0, 20, 20, 0.8);
+  transition: opacity 250ms linear, visibility 250ms linear;
+
+  &__content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 272px;
+    padding: 100px 29px;
+    text-align: center;
+
+    background-color: #01383A;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+    
+  }
+  &__close-icon {
+
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.backdrop-window__ok-btn {
+  display: inline-block;
+  color:initial;
+  text-transform: uppercase;
+
+  padding: 16px 75px;
+  border-radius: 16px;
+  background-color: $colorAccent;
+  &:hover,&:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

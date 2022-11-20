@@ -10,6 +10,33 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: inherit;
+  padding: 0;
 }
 
 img {
@@ -31,3 +58,8 @@ img {
   margin: 0;
   padding: 0;
 }
+
+
+
+
+
