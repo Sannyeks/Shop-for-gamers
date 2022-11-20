@@ -1,0 +1,11 @@
+.contacts {
+  @include doubleLine-mob(122);
+
+  @include mediaTablet() {
+    @include doubleLine-tablet(417);
+  }
+}
+// .image-wrap {
+//     max-width: 320px;
+//     margin: 0 auto;
+//   }

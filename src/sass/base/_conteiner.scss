@@ -1,0 +1,15 @@
+.conteiner {
+  margin: 0 auto;
+  width: $widthMobile;
+  padding: 0 16px;
+
+  @include mediaTablet() {
+    width: $widthTablet;
+    padding: 0 40px;
+  }
+
+  @include mediaDesktop() {
+    width: $widthDesktop;
+  }
+
+}

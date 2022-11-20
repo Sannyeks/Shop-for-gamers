@@ -1,15 +1,20 @@
-@import './common';
-@import './reset';
-@import './section';
-@import './conteiner';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/common';
+@import './base/reset';
+@import './base/section';
+@import './base/conteiner';
+@import './components/double-line';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/gallery';
+@import './layouts/sale';
+@import './layouts/accessories';
+@import './layouts/take_order';
+@import './layouts/contacts';
+@import './layouts/blog';
+@import './layouts/blog_article';
+@import './layouts/footer';
+
 @import './example';
-@import './header';
-@import './hero';
-@import './gallery';
-@import './sale';
-@import './accessories';
-@import './take_order';
-@import './contacts';
-@import './blog';
-@import './blog_article';
-@import './footer';
