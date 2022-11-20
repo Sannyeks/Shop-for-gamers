@@ -16,7 +16,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: inherit;
+
 }
 a:focus,
 a:active {
@@ -37,6 +37,7 @@ textarea {
   outline: none;
   background: inherit;
   padding: 0;
+  resize: none
 }
 
 img {

@@ -6,13 +6,31 @@
   @include pixelRatio {
     background-image: url(../images/background/mobile/background@2x.jpg);
   }
-
   @include doubleLine-mob(122);
 
+
   @include mediaTablet() {
-    
+    background-image: url(../images/background/tablet/background.jpg);
+    @include pixelRatio {
+      background-image: url(../images/background/tablet/background@2x.jpg);
+    }
     @include doubleLine-tablet(417);
+
+    @include mediaDesktop() {
+      background-image: url(../images/background/desktop/background_2/background_2.jpg);
+    @include pixelRatio {
+      background-image: url(../images/background/desktop/background_2/background_2@2x.jpg);
+    }
+
+    }
   }
+  &__conteiner {
+    @include mediaDesktop() {
+      padding-left: 142px;
+    }
+  }
+
+
   &__img {
     @include mediaTablet() {
     border-radius: 22px;
@@ -26,10 +44,22 @@
       padding: 0 40px;
       max-width: 1280px;
     }
+    @include mediaDesktop() {
+      margin: 48px auto 59px;
+    }
+}
+.content-wrap {
+  @include mediaDesktop() {
+    display: flex;
+    gap:122px;
+  }
 }
 
 .content-contacts {
   margin-bottom: 24px;
+  @include mediaDesktop() {
+    max-width: 488px;
+  }
   @include mediaTablet() {
     margin-bottom: 40px;
   }
@@ -40,6 +70,9 @@
       line-height: calc(28/24);
       margin-bottom: 32px;
     }
+    @include mediaDesktop() {
+      margin-bottom: 40px;
+    }
   }
   &__text {
     margin-bottom: 19px;
@@ -48,12 +81,17 @@
     }
   }
   &__email {
+    color: #FFFFFF;
 
   }
   &__support {
     @include mediaTablet() {
       display: flex;
       gap: 32px;
+    }
+    @include mediaDesktop() {
+      flex-direction: column;
+      gap: 40px;
     }
 
   }
@@ -72,6 +110,9 @@
 .support__wrap {
   &:first-child {
     margin-bottom: 24px;
+    @include mediaDesktop() {
+      margin-bottom: 0;
+    }
   }
 }
 .support__email, .support__tel a {
@@ -90,6 +131,11 @@
 .contact-us {
   @include mediaTablet() {
     padding: 0 49px 0 48px;
+  }
+  @include mediaDesktop() {
+    max-width: 591px;
+    flex-grow: 1;
+    padding-top: 2px;
   }
 
   
@@ -147,6 +193,9 @@
   @include mediaTablet() { 
     margin-bottom: 34px;
   }
+  @include mediaDesktop() {
+    margin-bottom: 47px;
+  }
   &__label {
     font-size: 16px;
     line-height: calc(20/16);
@@ -155,6 +204,7 @@
       font-size: 18px;
       line-height: calc(20/18);
     }
+
     }
   &__input {
     display: block;
