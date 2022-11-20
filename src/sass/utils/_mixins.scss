@@ -1,0 +1,72 @@
+
+// !!! Міксини для прорахунку розміру подвійної декоративної смужки (для того,щоб спрацювало - поставьте замість змінної $indent - довжину зеленої лінії від початку до перелому  (  ______| )
+
+// Для мобільної версії
+@mixin doubleLine-mob ($indent) {
+    &__greenline {
+        flex-basis: calc($indent * 100% / 320);
+        @media screen and (min-width:340px) {
+            flex-basis: calc( ($indent * 100% / 320) + 7% );
+        }
+    }
+    &__dark-greenline {
+        flex-basis: calc(($indent + 4) * 100% / 320);
+        @media screen and (min-width:340px) {
+            flex-basis: calc( (($indent + 4) * 100% / 320) + 7% );
+        }
+    }
+}
+
+// Для мобільної планшетної версії (десктопна не змінюється)
+@mixin doubleLine-tablet ($indent) {
+    &__greenline {
+        flex-basis: calc($indent * 100% / 768);
+    }
+    &__dark-greenline {
+        flex-basis: calc(($indent + 8) * 100% / 768);
+    }
+}
+
+// Скорочена форма виклику медіа-запитів для планшету
+
+@mixin mediaTablet {
+    @media screen and (min-width: $widthTablet) { 
+        @content;
+    }
+}
+
+// Скорочена форма виклику медіа-запитів для десктопу
+
+@mixin mediaDesktop {
+    @media screen and (min-width: $widthDesktop) {
+        @content;
+    }
+}
+
+// Скорочена форма оголешення display: flex; і розташування по центру.
+
+@mixin flex-center ($display:flex) {
+    display: $display;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// Калькулятор для вирахування ширини flex елемента.
+// У $gap ви вписуєте який вам необхіден проміжок між елементами , а у $qntItem - скільки має бути цих елементів.
+
+@mixin fbCounter ($gap,$qntItem) {
+    flex-basis:calc((100% - $gap * ($qntItem - 1)) / $qntItem);
+    
+}
+
+// Скорочена форма оголешення медіа-запиту, необхідного для адаптиву бекграунду під Ретіну.
+
+@mixin pixelRatio {
+    @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                @content;
+            }
+}
