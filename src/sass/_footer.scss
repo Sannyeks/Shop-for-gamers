@@ -132,8 +132,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-
-  margin: 0;
+  &:first-child {
+    margin: 0;
+    margin-bottom: 8px;
+  }
 }
 .contact-link {
   font-style: normal;
