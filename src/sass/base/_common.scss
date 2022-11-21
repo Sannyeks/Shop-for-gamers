@@ -1,1 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    color: #ffffff;
+    background-color: #01383A;
+}
