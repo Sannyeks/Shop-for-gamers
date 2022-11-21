@@ -1,6 +1,6 @@
 .conteiner {
-  margin: 0 auto;
   width: $widthMobile;
+  margin: 0 auto;
   padding: 0 16px;
 
   @include mediaTablet() {
