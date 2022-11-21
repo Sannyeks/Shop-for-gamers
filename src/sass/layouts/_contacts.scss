@@ -57,11 +57,10 @@
 
 .content-contacts {
   margin-bottom: 24px;
-  @include mediaDesktop() {
-    max-width: 488px;
-  }
+
   @include mediaTablet() {
     margin-bottom: 40px;
+    max-width: 488px;
   }
   &__info {
     margin-bottom: 24px;
