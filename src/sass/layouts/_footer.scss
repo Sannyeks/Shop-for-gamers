@@ -13,8 +13,6 @@
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
-    // flex-directional: column;
-    justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
@@ -33,24 +31,32 @@
   margin-bottom: 25px;
   text-decoration: none;
   display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 61px;
+  }
 }
 
 .footer-wrap {
   display: flex;
   flex-directional: column;
   justify-content: space-between;
-  // @media screen and (max-width: 479px) {
-  //   width: 479px;
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
   }
 }
 .footer-menu {
-  margin: 0 0 24px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 89px;
+  }
 }
 
 .footer-menu__list {
@@ -75,26 +81,42 @@
   font-style: normal;
   text-decoration: none;
 }
+
 .footer-social {
   display: flex;
   flex-flow: row wrap;
 }
 
-// .righted {
-//   margin-left: auto;
-// }
 .social-list-footer {
   width: 24px;
   height: 136px;
-
-  display: flex;
-  flex-direction: column;
-  // align-items: flex-start;
-  justify-content: space-between;
-  padding: 0px;
-  gap: 32px;
-  list-style: none;
-  margin: 0 16px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding: 0px;
+    gap: 32px;
+    list-style: none;
+    margin-right: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // padding: 0px;
+    gap: 16px;
+    list-style: none;
+    margin-right: 73px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 16px;
+    list-style: none;
+    margin-right: 73px;
+  }
 }
 
 .social-item-footer {
@@ -148,9 +170,11 @@
   margin-bottom: 8px;
 
   text-decoration: none;
-  // text-transform: capitalize;
+  &:last-child {
+    margin-bottom: 0;
+    // text-transform: capitalize;
+  }
 }
-
 .footer-address__tel {
   width: 147px;
   height: 73px;
