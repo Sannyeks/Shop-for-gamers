@@ -17,9 +17,9 @@
     @include doubleLine-tablet(417);
 
     @include mediaDesktop() {
-      background-image: url(../images/background/desktop/background_2/background_2.jpg);
+      background-image: url(../images/background/desktop/background-2.jpg);
     @include pixelRatio {
-      background-image: url(../images/background/desktop/background_2/background_2@2x.jpg);
+      background-image: url(../images/background/desktop/background-2@2x.jpg);
     }
 
     }
