@@ -26,8 +26,9 @@
                 id="user-name"
                 class="contact-us__input"
                 pattern="^[A-Za-zА-Яа-яЁё]{1,20}$"
-                placeholder="  "
+                placeholder="_"
                 required
+                tabindex="1"
               />
               <label class="contact-us__label" for="user-name">Name</label>
             </div>
@@ -37,16 +38,17 @@
                 name="user-email"
                 id="user-email"
                 class="contact-us__input"
-                placeholder="  "
+                placeholder="_"
                 required
                 pattern="^([a-zA-Z]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$"
+                tabindex="2"
               />
               <label class="contact-us__label" for="user-email">Email</label>
             </div>
 
             <ul class="select-wrap">
               <li class="select">
-                <div class="select__header">
+                <div class="select__header" tabindex="3">
                   <span class="select__current">Color Option</span>
                 </div>
 
@@ -57,7 +59,7 @@
                 </ul>
               </li>
               <li class="select">
-                <div class="select__header">
+                <div class="select__header" tabindex="4">
                   <span class="select__current">Quantity</span>
                 </div>
 
@@ -68,7 +70,7 @@
                 </ul>
               </li>
               <li class="select">
-                <div class="select__header">
+                <div class="select__header" tabindex="5">
                   <span class="select__current">Payment</span>
                 </div>
 
@@ -87,17 +89,26 @@
                   name="user-comment"
                   rows="10"
                   class="contact-us-textarea__input"
+                  tabindex="6"
                 ></textarea>
               </label>
             </div>
             <ul class="contact-us__button-wrap">
               <li>
-                <button class="contact-us__btn contact-us__btn--buy">
+                <button
+                  type="button"
+                  class="contact-us__btn contact-us__btn--buy"
+                  data-modal-open-buy
+                >
                   buy it now
                 </button>
               </li>
               <li>
-                <button class="contact-us__btn contact-us__btn--add">
+                <button
+                  class="contact-us__btn contact-us__btn--add"
+                  data-modal-open-cart
+                  type="button"
+                >
                   add to cart
                 </button>
               </li>
@@ -106,12 +117,32 @@
         </div>
       </div>
     </section>
-    <div class="backdrop-window is-hidden" data-modal>
+    <div class="backdrop-window is-hidden" data-modal-buy>
       <div class="backdrop-window__content">
         <button
           type="button"
           class="backdrop-window__close-btn"
-          data-modal-close
+          data-modal-close-buy
+        >
+          <svg class="backdrop-window__close-icon" width="32" height="32">
+            <use href="images/svg/symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <p class="backdrop-window__text">
+          Excellent choice!<br />
+          Let's move on to the checkout!
+        </p>
+        <a href="./index.html" class="backdrop-window__ok-btn" href=""
+          >Let's go!</a
+        >
+      </div>
+    </div>
+    <div class="backdrop-window is-hidden" data-modal-cart>
+      <div class="backdrop-window__content">
+        <button
+          type="button"
+          class="backdrop-window__close-btn"
+          data-modal-close-cart
         >
           <svg class="backdrop-window__close-icon" width="32" height="32">
             <use href="images/svg/symbol-defs.svg#icon-modal-close"></use>
@@ -119,10 +150,12 @@
         </button>
         <p class="backdrop-window__text">
           Thank you <br />
-          for your message! <br />
+          for your order! <br />
           We will contact you soon!
         </p>
-        <a href="./index.html" class="backdrop-window__ok-btn" href="">ok</a>
+        <a href="./accessories.html" class="backdrop-window__ok-btn" href=""
+          >keep shoping</a
+        >
       </div>
     </div>
   </body>

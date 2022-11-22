@@ -154,14 +154,20 @@
     position: relative;
     margin-bottom: 40px;
   }
-  &__input {
-    display: block;
-    height: 24px;
-    width: 100%;
-    padding-bottom: 4px;
-    color: inherit;
-    border-bottom: 1px solid $colorAccent;
+}
+.contact-us__input {
+  display: block;
+  height: 24px;
+  width: 100%;
+  padding-bottom:4px ;
+  color:inherit;
+  border-bottom: 1px solid $colorAccent;
+  transition: box-shadow 250ms linear;
+&:hover,&:focus {
+    box-shadow: 0px 2px 1px rgba(134, 229, 67, 0.1),0px 1px 1px rgba(134, 229, 67, 0.4);
   }
+  &::placeholder {
+    color:transparent;
 }
 
 .contact-us__label {
@@ -203,7 +209,12 @@
     padding-bottom: 4px;
     color: inherit;
     border: 1px solid $colorAccent;
-    @include mediaTablet() {
+    transition: box-shadow 250ms linear;
+    &:hover,&:focus {
+      
+      box-shadow: 0px 0px 5px rgba(134, 229, 67, 0.1),0px 0px 4px rgba(134, 229, 67, 0.4);
+    }
+    @include mediaTablet() { 
       height: 120px;
     }
   }
@@ -242,17 +253,15 @@
   @include mediaTablet() { 
     font-size: 32px;
     line-height: calc(38/32);
-    
-  }
+ }
 
 }
 
 .contact-us__btn--send {
   color: #ffffff;
   border: 1px solid #FFFFFF;
-
-  
-
+  &:hover, &:focus {
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1),0px 4px 20px rgba(255, 255, 255, 0.4);
   }
   @include mediaTablet() {
     font-size: 32px;
