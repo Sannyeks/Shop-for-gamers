@@ -1,13 +1,12 @@
 .contacts {
   background-image: url(../images/background/mobile/background.jpg);
-  background-size:cover;
-  background-position:top;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   @include pixelRatio {
     background-image: url(../images/background/mobile/background@2x.jpg);
   }
   @include doubleLine-mob(122);
-
 
   @include mediaTablet() {
     background-image: url(../images/background/tablet/background.jpg);
@@ -18,11 +17,10 @@
 
     @include mediaDesktop() {
 
-      background-image: url(../images/background/desktop/background-2.jpg);
-    @include pixelRatio {
-      background-image: url(../images/background/desktop/background-2@2x.jpg);
-
-    }
+      background-image: url(../images/background/desktop/background-2/background-2.jpg);
+      @include pixelRatio {
+        background-image: url(../images/background/desktop/background-2/background-2@2x.jpg);
+      }
 
     }
   }
@@ -32,28 +30,27 @@
     }
   }
 
-
   &__img {
     @include mediaTablet() {
-    border-radius: 22px;
+      border-radius: 22px;
     }
   }
 }
 .image-wrap {
-    margin: 24px auto 16px;
-    @include mediaTablet() {
-      margin: 40px auto 32px;
-      padding: 0 40px;
-      max-width: 1280px;
-    }
-    @include mediaDesktop() {
-      margin: 48px auto 59px;
-    }
+  margin: 24px auto 16px;
+  @include mediaTablet() {
+    margin: 40px auto 32px;
+    padding: 0 40px;
+    max-width: 1280px;
+  }
+  @include mediaDesktop() {
+    margin: 48px auto 59px;
+  }
 }
 .content-wrap {
   @include mediaDesktop() {
     display: flex;
-    gap:122px;
+    gap: 122px;
   }
 }
 
@@ -68,7 +65,7 @@
     margin-bottom: 24px;
     @include mediaTablet() {
       font-size: 24px;
-      line-height: calc(28/24);
+      line-height: calc(28 / 24);
       margin-bottom: 32px;
     }
     @include mediaDesktop() {
@@ -82,8 +79,7 @@
     }
   }
   &__email {
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
   &__support {
     @include mediaTablet() {
@@ -94,16 +90,14 @@
       flex-direction: column;
       gap: 40px;
     }
-
   }
 }
 .support {
-
   &__label {
     margin-bottom: 8px;
     @include mediaTablet() {
       font-size: 24px;
-      line-height: calc(28/24);
+      line-height: calc(28 / 24);
       letter-spacing: 0.01em;
     }
   }
@@ -116,15 +110,17 @@
     }
   }
 }
-.support__email, .support__tel a {
+.support__email,
+.support__tel a {
   color: $colorTextGrey;
   transition: color 250ms linear;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #ffffff;
   }
   @include mediaTablet() {
     font-size: 24px;
-    line-height: calc(28/24);
+    line-height: calc(28 / 24);
     letter-spacing: 0.01em;
   }
 }
@@ -139,20 +135,18 @@
     padding-top: 2px;
   }
 
-  
   &__title {
     font-weight: 500;
     font-size: 24px;
-    line-height: calc(28/24);
+    line-height: calc(28 / 24);
     color: $colorAccent;
     text-transform: uppercase;
     margin-bottom: 36px;
     @include mediaTablet() {
       margin-bottom: 68px;
       font-size: 36px;
-      line-height: calc(42/36);
+      line-height: calc(42 / 36);
     }
-    
   }
   &__form {
   }
@@ -174,30 +168,26 @@
   }
   &::placeholder {
     color:transparent;
-  }
-
 }
 
 .contact-us__label {
   font-size: 16px;
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
   position: absolute;
   top: 0;
   transition: transform 250ms linear;
-  .contact-us__field:focus-within &, .contact-us__input:not(:placeholder-shown) + & {
+  .contact-us__field:focus-within &,
+  .contact-us__input:not(:placeholder-shown) + & {
     transform: translateY(-24px);
   }
-  @include mediaTablet() { 
+  @include mediaTablet() {
     font-size: 18px;
-    line-height: calc(20/18);
+    line-height: calc(20 / 18);
   }
-
-
-
 }
 .contact-us-textarea {
   margin-bottom: 24px;
-  @include mediaTablet() { 
+  @include mediaTablet() {
     margin-bottom: 34px;
   }
   @include mediaDesktop() {
@@ -205,20 +195,19 @@
   }
   &__label {
     font-size: 16px;
-    line-height: calc(20/16);
-    color: #CDCDCD;
-    @include mediaTablet() { 
+    line-height: calc(20 / 16);
+    color: #cdcdcd;
+    @include mediaTablet() {
       font-size: 18px;
-      line-height: calc(20/18);
+      line-height: calc(20 / 18);
     }
-
-    }
+  }
   &__input {
     display: block;
     height: 95px;
     width: 100%;
-    padding-bottom:4px;
-    color:inherit;
+    padding-bottom: 4px;
+    color: inherit;
     border: 1px solid $colorAccent;
     transition: box-shadow 250ms linear;
     &:hover,&:focus {
@@ -244,31 +233,39 @@
 
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(19/16);
-  text-transform:uppercase;
+
+  line-height: calc(19 / 16);
+  color: inherit;
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+
   border-radius: 16px;
 
   transition: box-shadow 250ms linear;
 
-  // @include mediaTablet() { 
-  //   font-size: 32px;
-  //   line-height: calc(38/32);
-    
-  // }
+  &:hover,
+  &:focus {
+    box-shadow: (0px 4px 10px rgba(255, 255, 255, 0.1)),
+      (0px 4px 20px rgba(255, 255, 255, 0.4));
+
+
+  @include mediaTablet() { 
+    font-size: 32px;
+    line-height: calc(38/32);
+ }
 
 }
 
 .contact-us__btn--send {
   color: #ffffff;
   border: 1px solid #FFFFFF;
-
   &:hover, &:focus {
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1),0px 4px 20px rgba(255, 255, 255, 0.4);
   }
-  @include mediaTablet() { 
+  @include mediaTablet() {
     font-size: 32px;
-    line-height: calc(38/32);
+    line-height: calc(38 / 32);
     padding: 16px 112px;
   }
-;
 }
