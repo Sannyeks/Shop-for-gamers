@@ -37,6 +37,10 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   border-bottom: 1px solid $colorAccent;
+  &:hover,&:focus {
+    outline: none;
+    box-shadow: 0px 2px 1px rgba(134, 229, 67, 0.1),0px 1px 1px rgba(134, 229, 67, 0.4);
+  }
 
   &::after, &::before {
     content :'';
@@ -109,38 +113,46 @@
   padding-top: 8px;
   border-bottom: 1px solid $colorAccent;
 
+
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 100ms linear, visibility 100ms linear;
+  transition: opacity 100ms linear, visibility 100ms linear,box-shadow 250ms linear;
+  &:hover,&:focus {
+    box-shadow: 0px 2px 1px rgba(134, 229, 67, 0.1),0px 1px 1px rgba(134, 229, 67, 0.4);
+  }
 }
 .select__item {
   cursor: pointer;
   margin-bottom: 4px;
   font-size: 16px;
   line-height: calc(20 / 16);
-  transition: hover 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .select__item:hover {
   background-color: #17573D;
 }
 
-.contact-us {
 
-  &__btn {
-  }
-  &__btn--buy {
+.contact-us__btn--buy {
     background-color:$colorAccent;
     color: #01383A;
-    
-    
-  }
-  &__btn--add {
+    transition: box-shadow 250ms linear;
+    &:hover,&:focus {
+      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+  } 
+  .contact-us__btn--add {
     border: 1px solid $colorAccent;
     color: $colorAccent;
+    transition: box-shadow 250ms linear;
+    &:hover,&:focus {
+      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),0px 4px 20px rgba(134, 229, 67, 0.4);
+    }
   }
-}
+  
+
 .contact-us__button-wrap {
   & > li:first-child {
     margin-bottom: 16px;
