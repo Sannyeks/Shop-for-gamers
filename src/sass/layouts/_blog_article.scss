@@ -1,0 +1,235 @@
+.article {
+    @media screen and (min-width: 768px) {
+        padding-top: 112px+136px;
+        padding-bottom: 120px;
+    }
+
+    background-color:  #01383A;
+    padding-top: 40px+104px;
+    padding-bottom: 48px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto',
+    sans-serif;
+    
+        @include doubleLine-mob(122);
+        @include doubleLine-tablet(265);
+
+    &__conteiner {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 480px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            font-size: 56px;
+            line-height: 1;
+            //   margin-bottom: 24px;
+            padding-bottom: 72px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 16px;
+            padding-bottom: 59px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 31px;
+        }
+
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.166;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &__picture {
+        @media screen and (min-width: 768px) {
+            width: 387px;
+            margin-right: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 121px;
+            display: block;
+        }
+
+        @media screen and (max-width: 767px) {
+            // margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @media screen and (min-width: 768px) {
+            width: 387px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        border-radius: 12px;
+        display: block;
+        
+    }
+
+    &__desktop-box {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            margin-bottom: 48px;
+            
+        }
+    }
+
+    &__tablet-box {
+        @media screen and (min-width: 768px) and (max-width: 1281px) {
+            display: flex;
+            margin-bottom: 16px;
+            align-items: flex-end;
+        }
+    }
+
+    &__author {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 32px;
+            font-size: 24px;
+            color: #86E543;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 96px;
+            margin-bottom: 0;
+        }
+
+        font-size: inherit;
+        margin-bottom: 8px;
+        margin-top: 0;
+        line-height: 1;
+    }
+
+    &__update {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        margin-top: 0;
+        font-weight: 500;
+        line-height: 1;
+        color: #8D9289;
+    }
+
+        // Переносить підпис фото вниз для планшету та мобільного
+    &__tablet-description {
+        @media screen and (max-width: 767px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+    }
+
+   // Переносить підпис фото вгору для десктопу
+    &__desktop-description {
+        @media screen and (max-width: 1279px) {
+            display: none;
+        }
+
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: flex-end;
+    }
+
+    &__desktop-text {
+        @media screen and (max-width: 767px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @media screen and (min-width: 768px) {}
+    }
+
+    &__box {
+        @media screen and (max-width: 767px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    &__text {
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.167;
+        }
+
+        line-height: 1.187;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    &__text--green,
+    &__text--last {
+        margin-bottom: 0;
+    }
+
+    &__text--green,
+    &__list {
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            color: #86E543;
+        }
+    }
+
+    &__list {
+        @media screen and (max-width: 767px) {
+            // padding-left: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.167;
+        }
+
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    &__text:nth-child(3) {
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 0;
+        }
+    }
+}
