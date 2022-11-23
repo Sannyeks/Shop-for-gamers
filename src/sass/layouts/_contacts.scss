@@ -1,35 +1,29 @@
 .contacts {
-  background-image: url(../images/background/mobile/background.jpg);
+  background-image: url(../images/background/mobile/background-1.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
   @include pixelRatio {
-    background-image: url(../images/background/mobile/background@2x.jpg);
+    background-image: url(../images/background/mobile/background-1@2x.jpg);
   }
-
   @include doubleLine-mob(122);
 
   @include mediaTablet() {
     background-image: url(../images/background/tablet/background.jpg);
-
     @include pixelRatio {
       background-image: url(../images/background/tablet/background@2x.jpg);
     }
-
     @include doubleLine-tablet(417);
-
+  }
     @include mediaDesktop() {
 
       background-image: url(../images/background/desktop/background-2/background-2.jpg);
-
       @include pixelRatio {
         background-image: url(../images/background/desktop/background-2/background-2@2x.jpg);
       }
 
     }
-  }
-
+  
   &__conteiner {
     @include mediaDesktop() {
       padding-left: 142px;
@@ -42,21 +36,17 @@
     }
   }
 }
-
 .image-wrap {
   margin: 24px auto 16px;
-
   @include mediaTablet() {
     margin: 40px auto 32px;
     padding: 0 40px;
     max-width: 1280px;
   }
-
   @include mediaDesktop() {
     margin: 48px auto 59px;
   }
 }
-
 .content-wrap {
   @include mediaDesktop() {
     display: flex;
@@ -71,50 +61,40 @@
     margin-bottom: 40px;
     max-width: 488px;
   }
-
   &__info {
     margin-bottom: 24px;
-
     @include mediaTablet() {
       font-size: 24px;
       line-height: calc(28 / 24);
       margin-bottom: 32px;
     }
-
     @include mediaDesktop() {
       margin-bottom: 40px;
     }
   }
-
   &__text {
     margin-bottom: 19px;
-
     @include mediaTablet() {
       margin-bottom: 28px;
     }
   }
-
   &__email {
     color: #ffffff;
   }
-
   &__support {
     @include mediaTablet() {
       display: flex;
       gap: 32px;
     }
-
     @include mediaDesktop() {
       flex-direction: column;
       gap: 40px;
     }
   }
 }
-
 .support {
   &__label {
     margin-bottom: 8px;
-
     @include mediaTablet() {
       font-size: 24px;
       line-height: calc(28 / 24);
@@ -122,27 +102,22 @@
     }
   }
 }
-
 .support__wrap {
   &:first-child {
     margin-bottom: 24px;
-
     @include mediaDesktop() {
       margin-bottom: 0;
     }
   }
 }
-
 .support__email,
 .support__tel a {
   color: $colorTextGrey;
   transition: color 250ms linear;
-
   &:hover,
   &:focus {
     color: #ffffff;
   }
-
   @include mediaTablet() {
     font-size: 24px;
     line-height: calc(28 / 24);
@@ -154,7 +129,6 @@
   @include mediaTablet() {
     padding: 0 49px 0 48px;
   }
-
   @include mediaDesktop() {
     max-width: 591px;
     flex-grow: 1;
@@ -168,38 +142,23 @@
     color: $colorAccent;
     text-transform: uppercase;
     margin-bottom: 36px;
-
     @include mediaTablet() {
       margin-bottom: 68px;
       font-size: 36px;
       line-height: calc(42 / 36);
     }
   }
-
-  &__form {}
-
   &__field {
     position: relative;
     margin-bottom: 40px;
   }
-}
-
-.contact-us__input {
-  display: block;
-  height: 24px;
-  width: 100%;
-  padding-bottom: 4px;
-  color: inherit;
-  border-bottom: 1px solid $colorAccent;
-  transition: box-shadow 250ms linear;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 2px 1px rgba(134, 229, 67, 0.1), 0px 1px 1px rgba(134, 229, 67, 0.4);
-  }
-
-  &::placeholder {
-    color: transparent;
+  &__input {
+    display: block;
+    height: 24px;
+    width: 100%;
+    padding-bottom: 4px;
+    color: inherit;
+    border-bottom: 1px solid $colorAccent;
   }
 }
 }
@@ -210,40 +169,32 @@
   position: absolute;
   top: 0;
   transition: transform 250ms linear;
-
   .contact-us__field:focus-within &,
-  .contact-us__input:not(:placeholder-shown)+& {
+  .contact-us__input:not(:placeholder-shown) + & {
     transform: translateY(-24px);
   }
-
   @include mediaTablet() {
     font-size: 18px;
     line-height: calc(20 / 18);
   }
 }
-
 .contact-us-textarea {
   margin-bottom: 24px;
-
   @include mediaTablet() {
     margin-bottom: 34px;
   }
-
   @include mediaDesktop() {
     margin-bottom: 47px;
   }
-
   &__label {
     font-size: 16px;
     line-height: calc(20 / 16);
     color: #cdcdcd;
-
     @include mediaTablet() {
       font-size: 18px;
       line-height: calc(20 / 18);
     }
   }
-
   &__input {
     display: block;
     height: 95px;
@@ -251,25 +202,15 @@
     padding-bottom: 4px;
     color: inherit;
     border: 1px solid $colorAccent;
-    transition: box-shadow 250ms linear;
-
-    &:hover,
-    &:focus {
-
-      box-shadow: 0px 0px 5px rgba(134, 229, 67, 0.1), 0px 0px 4px rgba(134, 229, 67, 0.4);
-    }
-
     @include mediaTablet() {
       height: 120px;
     }
   }
 }
-
-.contact-us-textarea__label>span {
+.contact-us-textarea__label > span {
   display: inline-block;
   margin-bottom: 4px;
 }
-
 .contact-us__btn {
   margin: 0 auto;
   display: flex;
@@ -297,12 +238,12 @@
       (0px 4px 20px rgba(255, 255, 255, 0.4));
 
 
-    @include mediaTablet() {
-      font-size: 32px;
-      line-height: calc(38/32);
-    }
-
+  @include mediaTablet() { 
+    font-size: 32px;
+    line-height: calc(38/32);
+    
   }
+
 }
 }
 
@@ -310,11 +251,9 @@
   color: #ffffff;
   border: 1px solid #FFFFFF;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1), 0px 4px 20px rgba(255, 255, 255, 0.4);
-  }
+  
 
+  }
   @include mediaTablet() {
     font-size: 32px;
     line-height: calc(38 / 32);
