@@ -15,15 +15,13 @@
     }
     @include doubleLine-tablet(417);
   }
-    @include mediaDesktop() {
-
-      background-image: url(../images/background/desktop/background-2/background-2.jpg);
-      @include pixelRatio {
-        background-image: url(../images/background/desktop/background-2/background-2@2x.jpg);
-      }
-
+  @include mediaDesktop() {
+    background-image: url(../images/background/desktop/background-2/background-2.jpg);
+    @include pixelRatio {
+      background-image: url(../images/background/desktop/background-2/background-2@2x.jpg);
     }
-  
+  }
+
   &__conteiner {
     @include mediaDesktop() {
       padding-left: 142px;
@@ -161,7 +159,6 @@
     border-bottom: 1px solid $colorAccent;
   }
 }
-}
 
 .contact-us__label {
   font-size: 16px;
@@ -178,6 +175,7 @@
     line-height: calc(20 / 18);
   }
 }
+
 .contact-us-textarea {
   margin-bottom: 24px;
   @include mediaTablet() {
@@ -237,23 +235,18 @@
     box-shadow: (0px 4px 10px rgba(255, 255, 255, 0.1)),
       (0px 4px 20px rgba(255, 255, 255, 0.4));
 
-
-  @include mediaTablet() { 
-    font-size: 32px;
-    line-height: calc(38/32);
-    
+    @include mediaTablet() {
+      font-size: 32px;
+      line-height: calc(38 / 32);
+    }
   }
-
-}
 }
 
 .contact-us__btn--send {
-  color: #ffffff;
-  border: 1px solid #FFFFFF;
-
   
-
-  }
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  
   @include mediaTablet() {
     font-size: 32px;
     line-height: calc(38 / 32);
