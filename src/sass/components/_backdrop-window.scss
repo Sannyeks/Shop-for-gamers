@@ -58,15 +58,17 @@
       line-height: calc(66/56);
       margin-bottom: 80px;
     }
-    @include mediaDesktop() {
-      font-size: 64px;
-      line-height: calc(75/64);
-    }
 
+  }
+}
 
-
-    
-
+.backdrop-window__text--order {
+  @include mediaTablet() {
+    margin-bottom: 56px;
+  }
+  @include mediaDesktop() {
+    font-size: 64px;
+    line-height: calc(75/64);
   }
 }
 

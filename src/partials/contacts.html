@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <main class="contacts">
@@ -130,7 +129,7 @@
               <button
                 type="button"
                 class="contact-us__btn contact-us__btn--send"
-                data-modal-open
+                data-modal-open-send
               >
                 send
               </button>
@@ -138,12 +137,12 @@
           </div>
         </div>
       </section>
-      <div class="backdrop-window is-hidden" data-modal>
+      <div class="backdrop-window is-hidden" data-modal-send>
         <div class="backdrop-window__content">
           <button
             type="button"
             class="backdrop-window__close-btn"
-            data-modal-close
+            data-modal-close-send
           >
             <svg class="backdrop-window__close-icon" width="32" height="32">
               <use href="images/svg/symbol-defs.svg#icon-modal-close"></use>
@@ -158,5 +157,6 @@
         </div>
       </div>
     </main>
+    <script type="module" src="./js/modal-send.js"></script>
   </body>
 </html>

@@ -11,87 +11,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <section class="section">
       <div class="conteiner">
-        <div class="contact-us">
+        <div class="contact-us contact-us--order">
           <h3 class="contact-us__title">contact us</h3>
           <form class="contact-us__form">
-            <div class="contact-us__field">
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                class="contact-us__input"
-                pattern="^[A-Za-zА-Яа-яЁё]{1,20}$"
-                placeholder="_"
-                required
-                tabindex="1"
-              />
-              <label class="contact-us__label" for="user-name">Name</label>
-            </div>
-            <div class="contact-us__field">
-              <input
-                type="email"
-                name="user-email"
-                id="user-email"
-                class="contact-us__input"
-                placeholder="_"
-                required
-                pattern="^([a-zA-Z]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$"
-                tabindex="2"
-              />
-              <label class="contact-us__label" for="user-email">Email</label>
-            </div>
-
-            <ul class="select-wrap">
-              <li class="select">
-                <div class="select__header" tabindex="3">
-                  <span class="select__current">Color Option</span>
+            <div class="form-wrap">
+              <div class="contact-us__wrap-inputs">
+                <div class="contact-us__field">
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    class="contact-us__input"
+                    pattern="^[A-Za-zА-Яа-яЁё]{1,20}$"
+                    placeholder="_"
+                    required
+                    tabindex="1"
+                  />
+                  <label class="contact-us__label" for="user-name">Name</label>
+                </div>
+                <div class="contact-us__field">
+                  <input
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    class="contact-us__input"
+                    placeholder="_"
+                    required
+                    pattern="^([a-zA-Z]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$"
+                    tabindex="2"
+                  />
+                  <label class="contact-us__label" for="user-email"
+                    >Email</label
+                  >
                 </div>
 
-                <ul class="select__body">
-                  <li class="select__item">K9D Black Orange</li>
-                  <li class="select__item">K9D Silver Gray</li>
-                  <li class="select__item">K9U White Blue</li>
-                </ul>
-              </li>
-              <li class="select">
-                <div class="select__header" tabindex="4">
-                  <span class="select__current">Quantity</span>
-                </div>
+                <ul class="select-wrap">
+                  <li class="select">
+                    <div class="select__header" tabindex="3">
+                      <span class="select__current">Color Option</span>
+                    </div>
 
-                <ul class="select__body">
-                  <li class="select__item">1</li>
-                  <li class="select__item">2</li>
-                  <li class="select__item">3</li>
-                </ul>
-              </li>
-              <li class="select">
-                <div class="select__header" tabindex="5">
-                  <span class="select__current">Payment</span>
-                </div>
+                    <ul class="select__body">
+                      <li class="select__item">K9D Black Orange</li>
+                      <li class="select__item">K9D Silver Gray</li>
+                      <li class="select__item">K9U White Blue</li>
+                    </ul>
+                  </li>
+                  <li class="select">
+                    <div class="select__header" tabindex="4">
+                      <span class="select__current">Quantity</span>
+                    </div>
 
-                <ul class="select__body">
-                  <li class="select__item">Online</li>
-                  <li class="select__item">Cash</li>
-                  <li class="select__item">Credit card</li>
-                </ul>
-              </li>
-            </ul>
+                    <ul class="select__body">
+                      <li class="select__item">1</li>
+                      <li class="select__item">2</li>
+                      <li class="select__item">3</li>
+                    </ul>
+                  </li>
+                  <li class="select">
+                    <div class="select__header" tabindex="5">
+                      <span class="select__current">Payment</span>
+                    </div>
 
-            <div class="contact-us-textarea">
-              <label class="contact-us-textarea__label">
-                <span>Leave your message</span>
-                <textarea
-                  name="user-comment"
-                  rows="10"
-                  class="contact-us-textarea__input"
-                  tabindex="6"
-                ></textarea>
-              </label>
+                    <ul class="select__body">
+                      <li class="select__item">Online</li>
+                      <li class="select__item">Cash</li>
+                      <li class="select__item">Credit card</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-us-textarea contact-us-textarea--order">
+                <label class="contact-us-textarea__label">
+                  <span>Leave your message</span>
+                  <textarea
+                    name="user-comment"
+                    rows="10"
+                    class="contact-us-textarea__input contact-us-textarea__input--order"
+                    tabindex="6"
+                  ></textarea>
+                </label>
+              </div>
             </div>
             <ul class="contact-us__button-wrap">
               <li>
@@ -128,13 +132,11 @@
             <use href="images/svg/symbol-defs.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="backdrop-window__text">
+        <p class="backdrop-window__text backdrop-window__text--order">
           Excellent choice!<br />
           Let's move on to the checkout!
         </p>
-        <a href="./index.html" class="backdrop-window__ok-btn" href=""
-          >Let's go!</a
-        >
+        <a href="./index.html" class="backdrop-window__ok-btn">Let's go!</a>
       </div>
     </div>
     <div class="backdrop-window is-hidden" data-modal-cart>
@@ -148,15 +150,19 @@
             <use href="images/svg/symbol-defs.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="backdrop-window__text">
+        <p class="backdrop-window__text backdrop-window__text--order">
           Thank you <br />
           for your order! <br />
-          We will contact you soon!
+          We will contact you <br />
+          soon!
         </p>
-        <a href="./accessories.html" class="backdrop-window__ok-btn" href=""
+        <a href="./accessories.html" class="backdrop-window__ok-btn"
           >keep shoping</a
         >
       </div>
     </div>
+    <script type="module" src="./js/menu-list.js"></script>
+    <script type="module" src="./js/modal-buy.js"></script>
+    <script type="module" src="./js/modal-cart.js"></script>
   </body>
 </html>
