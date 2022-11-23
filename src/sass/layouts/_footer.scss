@@ -138,12 +138,13 @@
   }
 
   @media screen and (min-width: 1280px) {
-    // width: 104px;
-    // height: 24px;
-    // display: flex;
-    // gap: 16px;
+    width: 24px;
+    height: 104px;
+    display: flex;
+    gap: 16px;
     list-style: none;
     margin-right: 281px;
+    flex-direction: column;
   }
 }
 
