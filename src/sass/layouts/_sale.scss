@@ -36,7 +36,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    // padding-bottom: 120px;
+    padding-bottom: 120px;
     background-image: url('../images/background/desktop/background-1.jpg');
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -156,7 +156,7 @@
     padding-bottom: 20px;
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 14px;
+    padding-bottom: 20px;
   }
 }
 .sale__text__first {
