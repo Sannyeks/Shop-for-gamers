@@ -15,9 +15,14 @@
 .select.is-active {
   margin-bottom: 120px;
   @include mediaDesktop() {
-    // &:last-child {
-    //   margin-bottom: 0;
-    //   }
+    &:last-child {
+      margin-bottom: 0;
+      }
+  }
+}
+.form-wrap.js-margin {
+  @include mediaDesktop() {
+  margin-bottom: 120px;
   }
 }
 
@@ -201,5 +206,9 @@
     margin-bottom: 0;
     flex-basis: calc((100% - 20px) / 2);
   }
+}
+.section.take-order-bottom-section {
+  padding-top: 0;
+
 }
 
