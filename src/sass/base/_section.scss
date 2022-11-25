@@ -1,8 +1,8 @@
 .section {
   min-width: $widthMobile;
-  padding: 40px 0 48px;
+  padding-bottom: 48px;
   @include mediaTablet() {
-    padding: 120px 0;
+    padding-bottom: 120px;
   }
   &__title {
     font-weight: 500;
