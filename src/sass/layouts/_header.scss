@@ -70,7 +70,9 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-left: auto;
         width: 95px;
         height: 40px;
