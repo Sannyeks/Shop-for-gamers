@@ -151,6 +151,7 @@
 
 .contact-us__btn--buy {
   background-color: $colorAccent;
+  border: 1px solid $colorAccent;
   color: #01383a;
   transition: box-shadow 250ms linear;
   &:hover,
