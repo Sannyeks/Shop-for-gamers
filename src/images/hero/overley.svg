@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-overley" viewBox="0 0 36 32">
+<path fill="#81bb43" style="fill: var(--color1, #81bb43)" d="M28.102 29.229c-4.028 2.468-9.297 1.162-11.87 2.324s-5.425-0.253-8.384-1.826c-2.815-1.497-3.403-3.818-5.977-5.562s-1.743-10.542-1.743-15.191c0-4.649 13.281-7.139 17.681-8.633s11.787 2.241 14.112 4.815c2.324 2.573 5.811 13.032 3.652 14.527s-3.434 7.073-7.471 9.546z"></path>
+</symbol>
+</defs>
+</svg>
