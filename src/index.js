@@ -4,5 +4,5 @@ import './js/menu-list';
 import './js/modal-buy';
 import './js/modal-cart';
 import './js/modal-send';
-import './js/slider';
+// import './js/slider';
 
