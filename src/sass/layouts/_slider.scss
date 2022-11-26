@@ -21,6 +21,16 @@
 //     margin-top: 20px;
     
 // }
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+}
+
 .swiper-pagination {
 position: relative;
     margin-top: 24px;
