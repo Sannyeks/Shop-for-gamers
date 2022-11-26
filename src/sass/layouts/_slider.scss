@@ -22,17 +22,18 @@
     
 // }
 
+}
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-        bottom: 0px;
-        left: 0;
-        width: 100%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
 }
 
 .swiper-pagination {
-position: relative;
+    position: relative;
     margin-top: 24px;
 }
 
@@ -47,8 +48,6 @@ position: relative;
     height: 16px;
     border-radius: 8px;
     background-color: #ffffff;
-}
-
 }
 
 .container__slider {
