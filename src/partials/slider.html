@@ -1,17 +1,99 @@
 <section class="slider">
-    <div class="container__slider">
-        <div class="slider__div">
-            <div class="slider__line">
-                <img class="slider__img" src="/src/images/hero/slider_1@1x.jpg" alt="slider">
-                <!-- <p class="title__slider">One place for everything you want</p> -->
-                <img class="slider__img" src="/src/images/hero/slider_2@1x.jpg" alt="slider">
-                <img class="slider__img" src="/src/images/hero/slider_3@1x.jpg" alt="slider">
-            </div>
+  <div class="container__slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture class="slider__img">
+            <source
+              srcset="
+                ./images/hero/Banner1-desktop@1x.jpg,
+                ./images/hero/Banner1-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner1-tablet@1x.jpg,
+                ./images/hero/Banner1-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner1-mobile@1x.jpg,
+                ./images/hero/Banner1-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/hero/Banner1-mobile@1x.jpg"
+              alt="banner"
+              width="320"
+            />
+          </picture>
         </div>
-        <div class="button__slider">
-            <button class="button__slide--1" type="button"></button>
-            <button class="button__slide--2" type="button"></button>
-            <button class="button__slide--3" type="button"></button>
+        <div class="swiper-slide">
+          <picture class="slider__img">
+            <source
+              srcset="
+                ./images/hero/Banner2-desktop@1x.jpg,
+                ./images/hero/Banner2-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner2-tablet@1x.jpg,
+                ./images/hero/Banner2-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner2-mobile@1x.jpg,
+                ./images/hero/Banner2-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/hero/Banner2-mobile@1x.jpg"
+              alt="banner"
+              width="320"
+            />
+          </picture>
         </div>
+        <div class="swiper-slide">
+          <picture class="slider__img">
+            <source
+              srcset="
+                ./images/hero/Banner3-desktop@1x.jpg,
+                ./images/hero/Banner3-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner3-tablet@1x.jpg,
+                ./images/hero/Banner3-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/hero/Banner3-mobile@1x.jpg,
+                ./images/hero/Banner3-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/hero/Banner3-mobile@1x.jpg"
+              alt="banner"
+              width="320"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
 </section>
