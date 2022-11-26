@@ -27,6 +27,15 @@
     }
 }
 
+// Скорочена форма виклику медіа-запитів для мобілки
+
+@mixin mediaMobile {
+    @media screen and (min-width: $widthMobile) {
+        @content;
+    }
+}
+
+
 // Скорочена форма виклику медіа-запитів для планшету
 
 @mixin mediaTablet {
