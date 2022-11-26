@@ -21,13 +21,18 @@
 //     margin-top: 20px;
     
 // }
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    /* bottom: 10px; */
-    left: 0;
-    width: 100%;
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+    width: 40px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 }
