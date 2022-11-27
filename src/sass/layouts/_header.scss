@@ -64,10 +64,17 @@
     height: 56px;
 
     color: #ffffff;
+    animation: flip;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
 }
 
 .shop-btn {
     display: none;
+    animation: fadeOut;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 
     @media screen and (min-width: 768px) {
         display: flex;

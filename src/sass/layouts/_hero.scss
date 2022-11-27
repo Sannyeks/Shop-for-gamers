@@ -87,6 +87,7 @@
 .hero__descriptions{
     position: absolute;
     padding: 180px 37px 203px 36px;
+    
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         margin-left: auto;
@@ -154,7 +155,9 @@
     padding: 16px 20px;
     
     max-width: 180px;
-
+        animation: heartBeat;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     
     text-decoration: none;
     text-align: center;
