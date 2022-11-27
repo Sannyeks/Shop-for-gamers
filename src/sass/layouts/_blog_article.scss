@@ -15,21 +15,22 @@
         @include doubleLine-mob(122);
         @include doubleLine-tablet(265);
 
-    // &__conteiner {
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     max-width: 480px;
+    
+&__conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
 
-    //     @media screen and (min-width: 768px) {
-    //         max-width: 768px;
-    //         padding-left: 40px;
-    //         padding-right: 40px;
-    //     }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-    //     @media screen and (min-width: 1280px) {
-    //         max-width: 1280px;
-    //     }
-    // }
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+}
 
     &__title {
         position: relative;
@@ -64,7 +65,7 @@
 
     &__picture {
         @media screen and (min-width: 768px) {
-            // width: 387px;
+            width: 387px;
             margin-right: 40px;
             margin-top: 24px;
            
@@ -78,6 +79,7 @@
         @media screen and (max-width: 767px) {
              margin-top: 20px;
             width: 100%;
+            
         }
     }
 
@@ -90,10 +92,13 @@
         @media screen and (max-width: 767px) {
             width: 100%;
             margin-top: 20px;
+            margin-bottom: 20px;
+            
         }
 
         border-radius: 12px;
         display: block;
+    
         
     }
 
@@ -117,7 +122,9 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 32px;
             font-size: 24px;
+            line-height: 1;
             color: #86E543;
+            
         }
 
         @media screen and (min-width: 1280px) {
@@ -127,7 +134,7 @@
 
         font-size: inherit;
         margin-bottom: 8px;
-        margin-top: 20px;
+        margin-top: 0px;
         line-height: 1;
     }
 
@@ -141,7 +148,7 @@
             margin-bottom: 0;
         }
 
-        margin-top: 20px;
+        margin-top: 0px;
         font-weight: 500;
         line-height: 1;
         color: #8D9289;
@@ -158,6 +165,8 @@
             display: flex;
             flex-direction: column;
             padding-top: 100px;
+            width: 248px;
+            
         }
 
         @media screen and (min-width: 1280px) {
@@ -201,6 +210,7 @@
         line-height: 1.187;
         margin-top: 0;
         margin-bottom: 1em;
+       
     }
 
     &__text--green,
@@ -228,6 +238,7 @@
 
         margin-top: 0;
         margin-bottom: 1em;
+               
     }
 
     &__text:nth-child(3) {
